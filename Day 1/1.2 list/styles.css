@@ -1,0 +1,22 @@
+.square-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.square-list li {
+    margin-bottom: 5px; /* Add some spacing between list items */
+    padding-left: 20px; /* Add padding to adjust the position of the square */
+    position: relative;
+}
+
+.square-list li:before {
+    content: "";
+    width: 10px; /* Adjust the size of the square */
+    height: 10px; /* Adjust the size of the square */
+    background-color: #000; /* Color of the square */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px; /* Optional: make the square rounded */
+}
