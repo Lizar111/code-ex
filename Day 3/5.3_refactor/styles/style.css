@@ -5,7 +5,8 @@
    font-size: 16px;
    width: 300px;
    padding: 24px;
-   margin: 24px;
+   margin: auto;
+   margin-bottom: 24px;
    border-radius: 8px;
 }
 
@@ -27,7 +28,9 @@
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     width: 300px;
+    margin: auto;
     padding: 24px;
-    margin: 24px;
     border-radius: 8px;
+   
+    
 }

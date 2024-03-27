@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+
+  blockquote {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    border: 8px solid #333; /* Border to resemble a picture frame */
+    padding: 20px; /* Padding to create space between the quote and the frame */
+    background-color: #fff; /* White background for the quote */
+    max-width: 80%; /* Maximum width of the quote */
+    text-align: center; /* Center align the text */
+  }
+
+  cite {
+    display: block;
+    margin-top: 20px; /* Margin to separate the quote and the author */
+    font-style: normal; /* Style for the author attribution */
+  }
