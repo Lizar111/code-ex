@@ -186,68 +186,34 @@ p {
     margin: -12px 0 0 -12px 
 }
 
+.section {
+    margin-top: 32px;
+}
 
-/* .hero-content {
+.section-img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.section-title-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.section-titles {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 100%;
-    padding: 8px 16px;
+    padding-top: 40px;
+    width: 45%;
 }
 
-.hero-content h3 {
-        font-size: 23px;
-        font-weight: 400;
+.section-title {
+    font-size: 24px;
 }
 
-.hero-content h1 {
-    font-size: 40px;
-    font-weight: 500;
-    margin: 8px 0 20px;
+.section-description {
+    margin-top: 20px;
 }
-
-.hero-content h4 {
-    font-size: 17px;
-    font-weight:500;
-    margin: 20px 0 30px;
-}
-
-.spec-container {
-    display: flex;
-}
-
-.btn-containre{
-    display: flex;
-}
-.primary-btn {
-    background-color: #ffffff; 
-    color: #000000;
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    margin-right: 10px; 
-  }
-  
-  .outline-btn {
-    background-color: transparent;
-    color: #ffffff; 
-    border: 2px solid #ffffff; 
-    padding: 10px 20px
-    border-radius: 5px;
-    cursor: pointer; 
-    font-size: 16px; 
-  }
-  
-  .outline-btn:hover {
-    background-color: 
-    color: #000000; 
-  }
-  
-  .primary-btn:hover {
-    background-color: #b1b1b1;
-    color: #000000
-  } */
