@@ -25,6 +25,7 @@ body {
     background-image: radial-gradient(54.97% 272.54% at 272.54% -134.72%, rgba(108, 148, 255, .92) 0, rgba(0, 0, 0, .92) 100%);
     transition: 54.97% .5s ease-out, 272.54% .5s ease-out, 27.36% .5s ease-out, -134.72% .5s ease-out;
     height: 52px;
+
 }
 
 .navbar {

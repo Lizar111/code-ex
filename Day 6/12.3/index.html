@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Pseudo box color animater</title>
+<link rel="stylesheet" href="styles.css">
+
+    <style>
+     .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .box .box-2 {
+        content: ' ';
+        width: 100px;
+        height: 200px;
+        background-color: rgb(155, 53, 53);
+        position: absolute;
+    }
+    
+    .box:hover .box-2 {
+        animation: colorChange 2s infinite alternate; /* Animation */
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="content"><p>This is some content</p></div>
+</body>
+</html>
