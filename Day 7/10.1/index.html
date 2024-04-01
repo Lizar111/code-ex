@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Typography </title>
+<style>
+  /* Define the base font size */
+  html {
+    font-size: 16px; /* 1rem = 16px */
+  }
+
+  /* Define the header styles */
+  h1 {
+    font-size: 2rem; /* 2 times the base font size (32px) */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 700px) {
+    html {
+      font-size: 20px; /* Decrease the base font size for smaller screens */
+      height: 50;
+    }
+    h1 {
+      font-size: 1rem; /* Reduce the header font size */
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Responsive Typography Example</h1>
+</body>
+</html>
