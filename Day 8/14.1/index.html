@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+        position: relative;
+        overflow: hidden;
+        }
+
+        .box {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        transition: background-color 0.3s;
+        }
+
+        .box::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: -100px;
+        transition:transform 0.5s, background-color 0.5s, right 0.3s; 
+        }
+
+        .box:hover::after {
+        transform: translateX(100%); 
+        background-color: #2ecc71; /* Change to desired background color */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+      
+</body>
+</html>

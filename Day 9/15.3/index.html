@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'sidebar content sidebar2'
+                'footer footer footer'
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;   
+            grid-area: header; 
+        }
+
+        .sidebar  {
+            background-color: #5b5b5b;
+            color: #fff;
+            padding: 10px 20px;
+            grid-area: sidebar;
+        }
+
+        .content {
+            background-color: #5b5b5b;
+            color: #fff;
+            padding: 10px 20px;
+            grid-area: content; 
+        }
+
+        .sidebar2  {
+            background-color: #5b5b5b;
+            color: #fff;
+            padding: 10px 20px;
+            grid-area: sidebar2;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+        .container {
+            grid-template-areas:
+            'header'
+            'sidebar'
+            'content'
+            'sidebar2'
+            'footer';
+            justify-content: center;
+        }     
+      }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>my website</h1>
+        </header>
+
+        <div class="sidebar">
+            <h3>welcome to my site</h3>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="content">
+            <h3>welcome to my site</h3>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="sidebar2">
+            <h3>welcome to my site</h3>
+            <p> Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="footer">
+            <p>im a footer</p>
+        </div>
+    </div>
+
+</body>
