@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(247deg, #7E00BD -8.66%, #96DFFF 112.65%);        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 50px 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100% ;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #8860D9;
+            color: #fff;
+            border: none;
+            padding: 10px 120px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: auto;
+            margin-top: 24px;
+        }
+
+        button:hover {
+            background-color: #6647a3;
+        }
+
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-login p {
+            margin-bottom: 20px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .facebook-btn,
+        .apple-btn,
+        .google-btn,
+        .twitter-btn {
+            display: inline-block;
+            flex: 1; 
+            margin: 0 24px; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            
+        }
+
+        .facebook-btn {
+            background-color: #3b5998;
+            margin-left: 0;
+            /* Facebook blue */
+        }
+
+        .apple-btn {
+            background-color: #000;
+            /* Apple black */
+        }
+
+        .google-btn {
+            background-color: #dd4b39;
+            /* Google red */
+        }
+
+        .twitter-btn {
+            background-color: #1da1f2;
+            margin-right: 0;
+            /* Twitter blue */
+            .text {
+                align-items: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="title">
+            <h2>Login</h2>
+        </div>
+        <form action="login.php" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+                <button type="submit">Login</button>
+        </form>
+        <div class="social-login">
+            <div class="text"><p>Or login with</p></div>
+            <div class="social-buttons">
+                <a href="#" class="facebook-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="apple-btn"><i class="fab fa-apple"></i></a>
+                <a href="#" class="google-btn"><i class="fab fa-google"></i></a>
+                <a href="#" class="twitter-btn"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
